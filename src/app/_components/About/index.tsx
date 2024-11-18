@@ -5,7 +5,7 @@ import ProfileSummary from "@/app/_components/About/ProfileSummary";
 
 const About = () => {
     return (
-        <section className="mx-auto w-full py-48 px-4">
+        <section id="about" className="mx-auto w-full py-48 px-4">
             <motion.h1
                 initial={{ y: 48, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}

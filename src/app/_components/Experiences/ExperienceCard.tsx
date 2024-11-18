@@ -4,12 +4,13 @@ import {FC} from "react";
 
 interface EducationCardProps {
     image: string;
-    degree: string;
-    university: string;
+    position: string;
+    company: string;
     location: string;
+    years: string;
 }
 
-const EducationCard: FC<EducationCardProps> = ({ image, degree, university, location }) => {
+const ExperienceCard: FC<EducationCardProps> = ({ image, position, company, location, years }) => {
     return (
         <motion.div
             initial={{y: 48, opacity: 0}}
@@ -20,9 +21,10 @@ const EducationCard: FC<EducationCardProps> = ({ image, degree, university, loca
             <div className="flex flex-col md:flex-row gap-5">
                 <img src={image} className="w-40 object-contain" />
                 <div className="flex flex-col gap-1 font-light">
-                    <h1 className="font-bold text-2xl">{ degree }</h1>
-                    <h1>{ university }</h1>
+                    <h1 className="font-bold text-2xl">{ position }</h1>
+                    <h1>{ company }</h1>
                     <h1>{ location }</h1>
+                    <h1>{ years }</h1>
                 </div>
             </div>
             <div className="flex items-center text-zinc-300 gap-2 group-hover:text-zinc-500">
@@ -33,4 +35,4 @@ const EducationCard: FC<EducationCardProps> = ({ image, degree, university, loca
     );
 };
 
-export default EducationCard;
+export default ExperienceCard;

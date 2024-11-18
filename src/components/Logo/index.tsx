@@ -8,7 +8,7 @@ interface LogoProps {
     className?: string;
 }
 
-const Logo: FC<LogoProps> = ({ className }) => {
+const Index: FC<LogoProps> = ({ className }) => {
     const router = useRouter();
 
     return (
@@ -17,7 +17,7 @@ const Logo: FC<LogoProps> = ({ className }) => {
             onClick={() => router.push("/")}
         >
             <Image
-                alt="Logo"
+                alt="Index"
                 src="/images/portfolio_logo.png"
                 width={36}
                 height={36}
@@ -27,4 +27,4 @@ const Logo: FC<LogoProps> = ({ className }) => {
     );
 };
 
-export default Logo;
+export default Index;

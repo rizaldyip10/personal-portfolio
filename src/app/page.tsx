@@ -3,6 +3,7 @@ import Hero from "@/app/_components/Hero";
 import About from "@/app/_components/About";
 import Projects from "@/app/_components/Projects";
 import Education from "@/app/_components/Educations";
+import Experiences from "@/app/_components/Experiences";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
             <About />
             <Projects />
             <Education />
+            <Experiences />
         </ReactLenis>
     </main>
   );

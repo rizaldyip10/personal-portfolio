@@ -1,5 +1,6 @@
 import {FC, ReactNode} from "react";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 interface ContainerWrapperProps {
     children: ReactNode;
@@ -13,6 +14,7 @@ const ContainerWrapper: FC<ContainerWrapperProps> = ({ children }) => {
                 <div className="w-full px-6">
                     { children }
                 </div>
+                <Footer />
             </div>
         </div>
     );

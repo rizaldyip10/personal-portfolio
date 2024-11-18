@@ -13,7 +13,7 @@ const CenterImage: FC<CenterImageProps> = ({ sectionHeight }) => {
 
     useEffect(() => {
         const checkMobile = () => {
-            setIsMobile(window.innerWidth < 1024);
+            setIsMobile(window.innerWidth < 1280);
         };
 
         checkMobile();
@@ -88,10 +88,20 @@ const CenterImage: FC<CenterImageProps> = ({ sectionHeight }) => {
                     y: textY
                 }}
             >
-                <motion.h1 className="text-xl lg:text-3xl">
+                <motion.h1
+                    className="text-xl lg:text-3xl"
+                    initial={{ opacity: 0 }}
+                    whileInView={{opacity: 1}}
+                    transition={{duration: 0.75, ease: "easeInOut"}}
+                >
                     Hello, there!
                 </motion.h1>
-                <motion.h1 className="text-base text-wrap lg:text-2xl text-center font-light">
+                <motion.h1
+                    className="text-base text-wrap lg:text-2xl text-center font-light"
+                    initial={{ opacity: 0 }}
+                    whileInView={{opacity: 1}}
+                    transition={{duration: 0.75, ease: "easeInOut"}}
+                >
                     I&apos;m <span className="font-bold text-zinc-300">Rizaldy</span> and welcome to my journey as Software Engineer
                 </motion.h1>
             </motion.div>

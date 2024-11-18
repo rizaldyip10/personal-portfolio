@@ -1,10 +1,10 @@
 "use client";
-import Logo from "@/components/Navbar/Logo";
+import Index from "@/components/Logo";
 
 const Navbar = () => {
     return (
         <nav className="fixed w-full 2xl:w-[1440px] top-0 z-50 flex items-center justify-between px-6 py-3 text-white">
-            <Logo />
+            <Index />
             <div className="flex items-center w-max gap-4">
                 <button
                     onClick={() => {
@@ -28,7 +28,7 @@ const Navbar = () => {
                 </button>
                 <button
                     onClick={() => {
-                        document.getElementById("contact")?.scrollIntoView({
+                        document.getElementById("#")?.scrollIntoView({
                             behavior: "smooth",
                         });
                     }}
